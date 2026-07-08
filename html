@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aura Studio — A premium creative design and digital art studio crafting extraordinary brand identities, UI/UX experiences, and digital art." />
+    <meta name="keywords" content="creative studio, branding, UI/UX design, digital art, motion design, Aura Studio" />
+    <meta property="og:title" content="Aura Studio — Creative Design Studio" />
+    <meta property="og:description" content="We craft extraordinary brand identities, immersive UI/UX experiences, and stunning digital art." />
+    <meta property="og:type" content="website" />
+    <title>Aura Studio — Creative Design Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+    <!-- Mobile Nav Overlay -->
+    <nav id="mobile-nav" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
+        <button id="mobile-nav-close" aria-label="Close menu">✕</button>
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+        <a href="#process" class="mobile-nav-link">Process</a>
+        <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <!-- ─── HEADER ─── -->
+    <header id="site-header" role="banner">
+        <div class="container">
+            <nav class="nav-inner" aria-label="Main Navigation">
+                <a href="#hero" class="nav-logo" aria-label="Aura Studio Home">Aura<span>Studio</span></a>
+                <ul class="nav-links" role="list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact" class="nav-cta">Start a Project →</a></li>
+                </ul>
+                <button class="nav-mobile-toggle" id="mobile-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <!-- ─── HERO ─── -->
+        <section id="hero" aria-labelledby="hero-headline">
+            <div class="hero-bg-orbs" aria-hidden="true">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-eyebrow">✦ Award-Winning Creative Studio</div>
+                <h1 class="hero-headline" id="hero-headline">
+                    We Design<br/>
+                    <span class="gradient-text">Digital Aura</span>
+                </h1>
+                <p class="hero-sub">
+                    Transforming bold ideas into extraordinary brand experiences. We craft immersive identities, stunning interfaces, and captivating digital art that leave a lasting impression.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#portfolio" class="btn btn-primary" id="hero-view-work-btn">
+                        View Our Work
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Start a Project</a>
+                </div>
+                <div class="hero-stats" role="list">
+                    <div class="stat" role="listitem">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <div class="stat-number">8yr</div>
+                        <div class="stat-label">Of Excellence</div>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <div class="scroll-mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+        <!-- ─── SERVICES ─── -->
+        <section id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag reveal">What We Do</div>
+                    <h2 id="services-heading" class="reveal reveal-delay-1">Services Crafted<br/><span class="gradient-text">With Purpose</span></h2>
+                    <p class="reveal reveal-delay-2">From conceptualization to execution, we offer a comprehensive suite of creative services designed to elevate your brand.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal reveal-delay-1" id="service-brand" style="--card-glow: rgba(124,58,237,0.12);">
+                        <div class="service-number">01</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(124,58,237,0.05)); border: 1px solid rgba(124,58,237,0.3);">🎨</div>
+                        <h3>Brand Identity</h3>
+                        <p>We build iconic brand systems — logos, color palettes, typography, and guidelines — that communicate your story with precision and emotion.</p>
+                    </article>
+                    <article class="service-card reveal reveal-delay-2" id="service-ux" style="--card-glow: rgba(6,182,212,0.12);">
+                        <div class="service-number">02</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(6,182,212,0.05)); border: 1px solid rgba(6,182,212,0.3);">⬡</div>
+                        <h3>UI / UX Design</h3>
+                        <p>Crafting intuitive, beautiful digital interfaces with deep UX research, wireframing, and high-fidelity interactive prototypes.</p>
+                    </article>
+                    <article class="service-card reveal reveal-delay-3" id="service-art" style="--card-glow: rgba(236,72,153,0.12);">
+                        <div class="service-number">03</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(236,72,153,0.2), rgba(236,72,153,0.05)); border: 1px solid rgba(236,72,153,0.3);">✦</div>
+                        <h3>Digital Art</h3>
+                        <p>Bespoke digital illustrations, generative art, and 3D visual experiences that transform concepts into breathtaking visual narratives.</p>
+                    </article>
+                    <article class="service-card reveal reveal-delay-4" id="service-motion" style="--card-glow: rgba(124,58,237,0.10);">
+                        <div class="service-number">04</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.05)); border: 1px solid rgba(245,158,11,0.3);">▶</div>
+                        <h3>Motion Design</h3>
+                        <p>Dynamic animations, micro-interactions, and cinematic brand films that make your digital presence feel alive and unforgettable.</p>
+                    </article>
+                    <article class="service-card reveal reveal-delay-5" id="service-web" style="--card-glow: rgba(6,182,212,0.10);">
+                        <div class="service-number">05</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(16,185,129,0.05)); border: 1px solid rgba(16,185,129,0.3);">◈</div>
+                        <h3>Web Development</h3>
+                        <p>Pixel-perfect, performant, and accessible websites and web apps built with cutting-edge technologies and obsessive attention to detail.</p>
+                    </article>
+                    <article class="service-card reveal reveal-delay-6" id="service-strategy" style="--card-glow: rgba(236,72,153,0.10);">
+                        <div class="service-number">06</div>
+                        <div class="service-icon" style="background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(239,68,68,0.05)); border: 1px solid rgba(239,68,68,0.3);">◎</div>
+                        <h3>Creative Strategy</h3>
+                        <p>Deep-dive creative consulting and strategy workshops to unlock your brand potential and navigate competitive creative landscapes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ─── PORTFOLIO ─── -->
+        <section id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag reveal">Our Work</div>
+                    <h2 id="portfolio-heading" class="reveal reveal-delay-1">Selected<br/><span class="gradient-text">Projects</span></h2>
+                    <p class="reveal reveal-delay-2">A curated selection of projects that showcase our craft across branding, digital design, and interactive experiences.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item reveal reveal-delay-1" id="portfolio-item-1">
+                        <img src="assets/portfolio-1.jpg" alt="Chrome Wave — Branding Project for NovaCorp" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h3>Chrome Wave Identity</h3>
+                                <p>Brand Identity System</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">Branding</span>
+                                    <span class="portfolio-tag">Visual Identity</span>
+                                    <span class="portfolio-tag">3D Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item reveal reveal-delay-2" id="portfolio-item-2">
+                        <img src="assets/portfolio-2.jpg" alt="Glass UI — UI/UX Design for Prism App" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h3>Prism Glass UI</h3>
+                                <p>UI/UX Design System</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">UI/UX</span>
+                                    <span class="portfolio-tag">Design System</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="portfolio-item reveal reveal-delay-3" id="portfolio-item-3">
+                        <img src="assets/portfolio-3.jpg" alt="Fluid Topography — Digital Art Series" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h3>Violet Topography Series</h3>
+                                <p>Digital Art Collection</p>
+                                <div class="portfolio-tags">
+                                    <span class="portfolio-tag">Digital Art</span>
+                                    <span class="portfolio-tag">Generative</span>
+                                    <span class="portfolio-tag">Limited Edition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ─── PROCESS ─── -->
+        <section id="process" aria-labelledby="process-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag reveal">How We Work</div>
+                    <h2 id="process-heading" class="reveal reveal-delay-1">Our Creative<br/><span class="gradient-text">Process</span></h2>
+                    <p class="reveal reveal-delay-2">A refined four-phase methodology that ensures every project is delivered on time, on budget, and above expectations.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step reveal reveal-delay-1" id="process-step-1">
+                        <div class="step-number-wrap">
+                            <span class="step-number">01</span>
+                        </div>
+                        <h3>Discover</h3>
+                        <p>Deep research into your brand, audience, and competitors to build a solid strategic foundation.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-2" id="process-step-2">
+                        <div class="step-number-wrap">
+                            <span class="step-number">02</span>
+                        </div>
+                        <h3>Ideate</h3>
+                        <p>Rapid creative exploration — moodboards, sketches, and concepts to identify the perfect direction.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-3" id="process-step-3">
+                        <div class="step-number-wrap">
+                            <span class="step-number">03</span>
+                        </div>
+                        <h3>Design</h3>
+                        <p>Meticulous execution of the chosen direction with ongoing feedback loops for perfect alignment.</p>
+                    </div>
+                    <div class="process-step reveal reveal-delay-4" id="process-step-4">
+                        <div class="step-number-wrap">
+                            <span class="step-number">04</span>
+                        </div>
+                        <h3>Deliver</h3>
+                        <p>Polished final deliverables, seamless handoff, and ongoing support to ensure lasting success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── TESTIMONIALS ─── -->
+        <section id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag reveal">Client Love</div>
+                    <h2 id="testimonials-heading" class="reveal reveal-delay-1">What Our Clients<br/><span class="gradient-text">Say About Us</span></h2>
+                </div>
+            </div>
+            <div class="testimonials-track-wrap" aria-label="Client testimonials carousel">
+                <div class="testimonials-track" role="list">
+                    <!-- Set 1 -->
+                    <div class="testimonial-card" role="listitem" id="testimonial-1">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"Aura Studio completely transformed our brand. The attention to detail, creativity, and professionalism were unmatched. Our sales increased 60% after the rebrand."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">SR</div>
+                            <div class="author-info">
+                                <strong>Sofia Rodriguez</strong>
+                                <span>CEO, NovaCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" id="testimonial-2">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"The UI/UX design they delivered was nothing short of spectacular. User retention on our app jumped 40% within the first month of launch. Truly exceptional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">JC</div>
+                            <div class="author-info">
+                                <strong>James Chen</strong>
+                                <span>Product Lead, Prism App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" id="testimonial-3">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"Working with Aura Studio was a revelation. They deeply understood our vision and translated it into a visual language that resonates with our global audience."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">AL</div>
+                            <div class="author-info">
+                                <strong>Amara Lee</strong>
+                                <span>Founder, Lumi Collective</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" id="testimonial-4">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"Aura Studio is our secret weapon. Every project they deliver feels like it's been crafted with care and intention. They have raised the bar for creative agencies."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">MK</div>
+                            <div class="author-info">
+                                <strong>Marcus Klein</strong>
+                                <span>CMO, Vertex Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" id="testimonial-5">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p>"The digital art series they created for our campaign went viral across social platforms. We gained over 100k followers in a week. Incredible creative impact."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">NP</div>
+                            <div class="author-info">
+                                <strong>Nina Patel</strong>
+                                <span>Marketing Director, Orbis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate for infinite loop -->
+                    <div class="testimonial-card" role="listitem" aria-hidden="true">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Aura Studio completely transformed our brand. The attention to detail, creativity, and professionalism were unmatched. Our sales increased 60% after the rebrand."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SR</div>
+                            <div class="author-info">
+                                <strong>Sofia Rodriguez</strong>
+                                <span>CEO, NovaCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" aria-hidden="true">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"The UI/UX design they delivered was nothing short of spectacular. User retention on our app jumped 40% within the first month of launch. Truly exceptional."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JC</div>
+                            <div class="author-info">
+                                <strong>James Chen</strong>
+                                <span>Product Lead, Prism App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" aria-hidden="true">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Working with Aura Studio was a revelation. They deeply understood our vision and translated it into a visual language that resonates with our global audience."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AL</div>
+                            <div class="author-info">
+                                <strong>Amara Lee</strong>
+                                <span>Founder, Lumi Collective</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" aria-hidden="true">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"Aura Studio is our secret weapon. Every project they deliver feels like it's been crafted with care and intention. They have raised the bar for creative agencies."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MK</div>
+                            <div class="author-info">
+                                <strong>Marcus Klein</strong>
+                                <span>CMO, Vertex Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" role="listitem" aria-hidden="true">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p>"The digital art series they created for our campaign went viral across social platforms. We gained over 100k followers in a week. Incredible creative impact."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NP</div>
+                            <div class="author-info">
+                                <strong>Nina Patel</strong>
+                                <span>Marketing Director, Orbis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ─── CONTACT ─── -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="section-tag reveal">Get In Touch</div>
+                        <h2 id="contact-heading" class="reveal reveal-delay-1">Let's Create<br/><span class="gradient-text">Something Great</span></h2>
+                        <p class="reveal reveal-delay-2">Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.</p>
+                        <div class="contact-details reveal reveal-delay-3">
+                            <div class="contact-detail">
+                                <div class="detail-icon" aria-hidden="true">✉</div>
+                                <span>hello@aurastudio.design</span>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="detail-icon" aria-hidden="true">☎</div>
+                                <span>+1 (555) 424-8800</span>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="detail-icon" aria-hidden="true">⊙</div>
+                                <span>San Francisco, CA — Open Globally</span>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="detail-icon" aria-hidden="true">◷</div>
+                                <span>Mon – Fri, 9:00 AM – 6:00 PM PST</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap reveal reveal-delay-2">
+                        <form id="contact-form" novalidate aria-label="Contact form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="Alex Johnson" required autocomplete="name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="alex@company.com" required autocomplete="email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-company">Company / Organization</label>
+                                <input type="text" id="contact-company" name="company" placeholder="Your Company Name" autocomplete="organization" />
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-service">Service Interested In</label>
+                                <select id="contact-service" name="service">
+                                    <option value="" disabled selected>Select a service…</option>
+                                    <option value="brand">Brand Identity</option>
+                                    <option value="ux">UI / UX Design</option>
+                                    <option value="art">Digital Art</option>
+                                    <option value="motion">Motion Design</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="strategy">Creative Strategy</option>
+                                    <option value="other">Other / Not Sure</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-budget">Project Budget</label>
+                                <select id="contact-budget" name="budget">
+                                    <option value="" disabled selected>Select your budget range…</option>
+                                    <option value="5-10k">$5,000 – $10,000</option>
+                                    <option value="10-25k">$10,000 – $25,000</option>
+                                    <option value="25-50k">$25,000 – $50,000</option>
+                                    <option value="50k+">$50,000+</option>
+                                    <option value="discuss">Let's Discuss</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Tell Us About Your Project *</label>
+                                <textarea id="contact-message" name="message" placeholder="Describe your project, goals, timeline, and any relevant details…" required></textarea>
+                            </div>
+                            <button type="submit" id="contact-submit-btn" class="btn btn-primary submit-btn">
+                                Send Message
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </button>
+                        </form>
+                        <div class="form-success" id="form-success" role="status" aria-live="polite">
+                            <div class="form-success-icon" aria-hidden="true">✓</div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. We'll be in touch within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ─── FOOTER ─── -->
+    <footer id="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo" aria-label="Aura Studio">Aura<span>Studio</span></a>
+                    <p>Crafting digital experiences that transcend the ordinary. We're a creative studio obsessed with quality, innovation, and lasting impact.</p>
+                    <div class="footer-socials" aria-label="Social media links">
+                        <a href="#" class="social-link" id="footer-social-twitter" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" id="footer-social-instagram" aria-label="Instagram">⬡</a>
+                        <a href="#" class="social-link" id="footer-social-dribbble" aria-label="Dribbble">◎</a>
+                        <a href="#" class="social-link" id="footer-social-behance" aria-label="Behance">Bē</a>
+                        <a href="#" class="social-link" id="footer-social-linkedin" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul role="list">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul role="list">
+                        <li><a href="#services">Brand Identity</a></li>
+                        <li><a href="#services">UI / UX Design</a></li>
+                        <li><a href="#services">Digital Art</a></li>
+                        <li><a href="#services">Motion Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul role="list">
+                        <li><a href="#contact">Start a Project</a></li>
+                        <li><a href="mailto:hello@aurastudio.design">hello@aurastudio.design</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Aura Studio. All rights reserved. Made with <span>♥</span> and obsessive attention to detail.</p>
+                <p>Privacy Policy · Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
